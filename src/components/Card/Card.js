@@ -1,23 +1,25 @@
+import styles from './Card.module.scss';
+
 const Card = () => {
   return (
-    <div className="card">
-      <div className="card__favorite">
+    <div className={styles.card}>
+      <div className={styles.card__favorite}>
         <img src="./img/heart_unliked.svg" alt="unliked" />
       </div>
       <img
-        className="card__img"
+        className={styles.card__img}
         src="./img/sneakers/NikeBlazerMidSuede.jpg"
         width={133}
         height={112}
         alt="Nike Blazer Mid Suede"
       />
-      <p className="card__text">
+      <p className={styles.card__text}>
         Мужские Кроссовки
         <br /> Nike Blazer Mid Suede
       </p>
       <div className="d-flex justify-between align-center">
         <div className="d-flex flex-column">
-          <span className="card__price">Цена:</span>
+          <span className={styles.card__price}>Цена:</span>
           <b className="card__cost">12 999 руб.</b>
         </div>
         <button className="button">
